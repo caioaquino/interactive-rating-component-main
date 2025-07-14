@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
@@ -12,17 +11,34 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="./main.css"/>
+  <link rel="stylesheet" href="./main.css" />
 
   <title>Frontend Mentor | Interactive rating component</title>
 </head>
 
 <body>
   <main>
-  <div class="rating-container">
-    <img src="./images/icon-star.svg" alt="Ícone de estrela" id="star-icon"/>
-  </div>
-</main>
+    <div class="rating-container">
+      <div class="rating-container__icon"> <img src="./images/icon-star.svg" alt="Ícone de estrela" />
+      </div>
+
+      <div class="rating-container__text">
+         <h1 class="rating-container__text__title">How did we do?</h1>
+      <p class="rating-container__text__description">Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!</p>
+      </div>
+     
+      <ul class="rating-container__list">
+        <li class="rating-container__list__item"><label for="rating">1</label><input name="rating" type="radio" value="1"/></li>
+        <li class="rating-container__list__item" ><label for="rating">2</label><input name="rating" type="radio" value="2"/></li>
+        <li class="rating-container__list__item" ><label for="rating">3</label><input name="rating" type="radio" value="3"/></li>
+        <li class="rating-container__list__item" ><label for="rating">4</label><input name="rating" type="radio" value="4"/></li>
+        <li class="rating-container__list__item" ><label for="rating">5</label><input name="rating" type="radio" value="5"/></li>
+      </ul>
+
+      <button class="rating-container__finish__button">SUBMIT</button>
+    </div>
+  </main>
 </body>
 
 </html>
