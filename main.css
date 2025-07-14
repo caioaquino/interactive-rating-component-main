@@ -1,0 +1,39 @@
+:root {
+    --primary-color: hsl(25, 97%, 53%);
+    --neutral-color: hsl(0, 100%, 100%);
+    --secondary-color-low: hsl(217, 12%, 63%);
+    --secondary-color-medium: hsl(213, 19%, 18%);
+    --secondary-color-high: hsl(216, 12%, 8%);
+    --breakpoint-mobile: 375px;
+    --breakpoint-desktop: 1440px;
+}
+
+body {
+    font-family: "Overpass", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--secondary-color-high);
+}
+
+h1,
+h2,
+h3,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+.rating-container{
+    background-color: var(--secondary-color-medium);
+    border-radius: 24px;
+    padding: 24px;
+}
+
+#star-icon{
+    background-color: var(--secondary-color-low);
+    opacity: 0.1;;
+    width: 16px;
+    height: 16px;
+    padding: 16px;
+    border-radius: 50%;
+}
