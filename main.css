@@ -4,8 +4,6 @@
     --secondary-color-low: hsl(217, 12%, 63%);
     --secondary-color-medium: hsl(213, 19%, 18%);
     --secondary-color-high: hsl(216, 12%, 8%);
-    --breakpoint-mobile: 375px;
-    --breakpoint-desktop: 1440px;
 }
 
 body {
