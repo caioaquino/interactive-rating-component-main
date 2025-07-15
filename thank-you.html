@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./thank-you.css" />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+</head>
+
+<body>
+    <main>
+        <div class="thank-you-container">
+            <div class="thank-you-continer__icon"> <img src="./images/illustration-thank-you.svg"
+                    alt="Imagem de smartphone com formulário" />
+            </div>
+            <div class="thank-you-container__rating">
+                <p>You selected 4 out of 5</p>
+            </div>
+            <div class="thank-you-continer__text">
+                <h1 class="thank-you-continer__text__title">Thank you!</h1>
+                <p class="thank-you-continer__text__description">We appreciate you taking the time to give a rating. If
+                    you ever need support, dont hesitate to get in touch!</p>
+            </div>
+
+        </div>
+    </main>
+    <script>
+        const rating = new URLSearchParams(window.location.search).get('rating');
+        if (rating) {
+            const paragraph = document.querySelector('.thank-you-container__rating p');
+            if (paragraph) {
+                paragraph.textContent = `You selected ${rating} out of 5`;
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
