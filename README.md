@@ -1,28 +1,48 @@
-# Frontend Mentor - Interactive rating component
+# Frontend Mentor - Interactive rating component solution
 
-![Design preview for the Interactive rating component coding challenge](./preview.jpg)
+This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## The challenge
+## Table of contents
 
-Your challenge is to build out this interactive rating component and get it looking as close to the design as possible.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+- [Author](#author)
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+## Overview
 
-Your users should be able to:
+### The challenge
+
+Users should be able to:
 
 - View the optimal layout for the app depending on their device's screen size
 - See hover states for all interactive elements on the page
 - Select and submit a number rating
 - See the "Thank you" card state after submitting a rating
 
+### Screenshot
 
-## The solution
+![](./screenshot.jpg)
 
-The solution i used is based on pure html, css and javascript, aiming to improve my basic front-end skills. 
 
-The index.html page contains the first screen of the challenge, where the user should select a rating.
-The than-you.html page contains the second screen of the challenge, showing a message to thank the user for their rating.
+### Links
 
-Both pages are responsive for smaller devices and the form is navigable through screen readers and keyboard.
+- Solution URL: [Add solution URL here](https://github.com/caioaquino/interactive-rating-component-main)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-The styling is split into three files: the main.css defines the basic styles, font-sizes and colors. The rating.css defines the styles for the first page. The thank-you.css defines the styles for the second page.
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
+- Javascript
+
+## Author
+
+- Frontend Mentor - [@caioaquino](https://www.frontendmentor.io/profile/caioaquino)
