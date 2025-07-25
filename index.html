@@ -15,6 +15,9 @@
   <link rel="stylesheet" href="./rating.css" />
 
   <title>Frontend Mentor | Interactive rating component</title>
+
+    <script src="./methods.js" defer></script>
+
 </head>
 
 <body>
@@ -41,7 +44,7 @@
             <li class="rating-container__list__item"><input name="rating" type="radio" value="4" id="rating-4" aria-required="true"/><label
                 for="rating-4" tabindex="0" aria-label="4">4</label></li>
             <li class="rating-container__list__item"><input name="rating" type="radio" value="5" id="rating-5" aria-required="true"/><label
-                for="rating-5" tabindex="0" aria-label="4">5</label></li>
+                for="rating-5" tabindex="0" aria-label="5">5</label></li>
           </ul>
           <button class="rating-container__finish__button" type="submit" name="confirm-rating-button"
             id="confirm-rating-button">Submit</button>
@@ -50,30 +53,6 @@
     </div>
   </main>
 
-  <script>
-
-    document.getElementById('confirm-rating-button').addEventListener('click', function (event) {
-      event.preventDefault();
-      const rating = document.querySelector('input[name="rating"]:checked');
-      if (rating) {
-        window.location.href = `./thank-you.html?rating=${rating.value}`;
-      } else {
-        alert('Please select a rating before submitting.');
-        return;
-      }
-    });
-
-
-    document.querySelectorAll('.rating-container__list__item label').forEach(function (label) {
-      label.addEventListener('keydown', function (event) {
-        if (event.key === 'Enter' || event.key === ' ') {
-          const input = document.getElementById(label.getAttribute('for'));
-          if (input) input.checked = true;
-        }
-      });
-    });
-
-  </script>
 </body>
 
 </html>
